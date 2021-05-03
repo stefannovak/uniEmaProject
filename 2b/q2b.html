@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Admin Panel | Announcements</title>
-        <link rel="stylesheet" href="q2a.css">
+        <link rel="stylesheet" href="q2b.css">
         <meta charset="UTF-8">
     </head>
     <body>
@@ -12,6 +12,11 @@
             <a href="#">Members</a>
             <a href="#">News</a>
             <a href="#">Announcements</a>
+            <button class="icon">
+                <a href="#" class="icon">
+                    <img src="./img/announcement-assets/menu.png" alt="menu-button" class="menuImg">
+                </a>
+            </button>
         </div>
         <div id="main">
             <h1>Announcements</h1>
@@ -25,13 +30,13 @@
                     </div>
                     <div class="row2">
                         <label class="leftText">Email Date *</label>
-                        <input type="date" class="rightSide" id="date" name="emailDate">
+                        <input type="date" required class="rightSide" id="date" name="emailDate">
                     </div>
                     <div class="row3">
                         <label class="leftText">Body *</label>
                     </div>
                     <div class="row4">
-                        <textarea name="textarea" id="body" cols="70" rows="15"></textarea>
+                        <textarea name="textarea" required id="body"></textarea>
                     </div>
                     <div class="row5">
                         <button type="submit">Done</button>
