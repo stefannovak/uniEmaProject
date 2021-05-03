@@ -30,11 +30,8 @@
 }
 
 /* responsive */
-.sidenav a.icon {
-  display: none;
-}
-
 button.icon {
+  display: none;
   background-color: #111;
   border-width: 0;
 }
@@ -127,11 +124,9 @@ textarea {
 
   .sidenav a {display: none;}
 
-  .sidenav a.icon {
+  .sidenav button.icon {
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
     background-color: #111;
     border: none;
   }
@@ -152,7 +147,6 @@ textarea {
   /* Form */
 
   .grid-container {
-    /* padding-left: 50px; */
     text-align: center; 
     display: flex;
     flex-wrap: wrap;
@@ -160,11 +154,10 @@ textarea {
 
   label.leftText {
     margin-top: 0;
-    flex-direction: column;  }
+    flex-direction: column; 
+   }
 
   div.row1, div.row2, div.row3, div.row4 {
-    grid-row: 0;
-    grid-column: 0;
     margin-top: 0;
     display: flex;
     flex-direction: column;
