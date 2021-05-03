@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin Panel | Announcements</title>
+        <link rel="stylesheet" href="q2a.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="#">Walks</a>
+            <a href="#">Events</a>
+            <a href="#">Members</a>
+            <a href="#">News</a>
+            <a href="#">Announcements</a>
+        </div>
+        <div id="main">
+            <h1>Announcements</h1>
+            <div class="grid-container">
+                <form name="form" method="POST" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+                    <div class="row1">
+                        <label class="leftText">Attachment</label>
+                        <button class="attachButton" type="button" value="testButton">  
+                            <img class="attachImg" alt="paperclip" src="./img/announcement-assets/attach.png"/>
+                        </button>
+                    </div>
+                    <div class="row2">
+                        <label class="leftText">Email Date *</label>
+                        <input type="date" required class="rightSide" id="date" name="emailDate">
+                    </div>
+                    <div class="row3">
+                        <label class="leftText">Body *</label>
+                    </div>
+                    <div class="row4">
+                        <textarea name="textarea" required id="body" cols="70" rows="15"></textarea>
+                    </div>
+                    <div class="row5">
+                        <button type="submit">Done</button>
+                    </div>
+                    <input type="hidden" id="custId" name="sessionID" value="1234abcd-5678-9090-efef">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
