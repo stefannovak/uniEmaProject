@@ -15,25 +15,25 @@
         <div id="main">
             <h1>Announcements</h1>
             <div class="grid-container">
-                <form action="">
+                <form action="" name="form">
                     <div class="row1">
-                        <h4>Attachment</h4>
+                        <label for="attachButton">Attachment</label>
                         <button class="attachButton">  
                             <img class="attachImg" src="./img/announcement-assets/attach.png"/>
                         </button>
                     </div>
                     <div class="row2">
-                        <h4>Email Date *</h4>
-                        <button>calendar</button>
+                        <label for="date">Email Date *</label>
+                        <input type="date" id="date" name="emailDate">
                     </div>
                     <div class="row3">
-                        <h4>Body *</h4>
+                        <label for="textarea">Body *</label>
                     </div>
                     <div class="row4">
-                        <textarea name="Body" id="body" cols="30" rows="10"></textarea>
+                        <textarea name="textarea" form="userform" id="body" cols="30" rows="10"></textarea>
                     </div>
                     <div class="row5">
-                        <button>Done</button>
+                        <button type="submit" form="form" value="Done">Done</button>
                     </div>
                 </form>
             </div>
