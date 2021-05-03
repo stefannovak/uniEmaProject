@@ -2,7 +2,8 @@
     padding-left: 200px;
   }
 
-/* The side navigation menu */
+/* The side nav menu */
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 200px;
@@ -28,4 +29,45 @@
 
   .sidenav a:hover {
     color: #f1f1f1;
+  }
+
+  /* Form */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .row1 {
+    grid-row: 1;
+    columns: 2;
+  }
+
+  .row2 {
+    grid-row: 2;
+    columns: 2;
+  }
+
+  .row3 {
+    grid-row: 3;
+  }
+
+  .row4 {
+    grid-row: 4;
+  }
+
+  .row5 {
+    grid-row: 5;
+  }
+
+  .attachImg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .attachButton{
+    /* background: none;
+    border: none; */
   }
